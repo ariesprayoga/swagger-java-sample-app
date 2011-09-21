@@ -9,7 +9,7 @@ import com.wordnik.swagger.sample.exception.NotFoundException;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.*;
 
-public class UserResource {
+public class UserResource extends Help {
 	static UserData userData = new UserData();
 
 	@POST
