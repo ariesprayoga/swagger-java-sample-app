@@ -8,7 +8,7 @@ import com.wordnik.swagger.sample.exception.NotFoundException;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.*;
 
-public class PetResource extends Help {
+public class PetResource extends JavaHelp {
 	static PetData petData = new PetData();
 	static JavaRestResourceUtil ru = new JavaRestResourceUtil();
 
