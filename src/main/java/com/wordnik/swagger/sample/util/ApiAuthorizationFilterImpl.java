@@ -50,7 +50,7 @@ public class ApiAuthorizationFilterImpl implements ApiAuthorizationFilter {
 		String apiKey = uriInfo.getQueryParameters().getFirst("api_key");
 		String mName = method.toUpperCase();
 		if (isPathSecure(mName + ":" + apiPath, false)) {
-			if (apiKey.equals(securekeyId)) {
+			if (securekeyId.equals(apiKey)) {
 				return true;
 			} else {
 				return false;
